@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>vue.js常用指令测试</title>
-    <script src="vue.min.js"></script>
+
 </head>
 <body>
 <div id="app">
-    {{name}}
+    <!--{{name}}-->
+    <spa v-text="name"></spa>
     <input type="text" v-model="num1">+
     <input type="text" v-model="num2"> =
-    {{Number.parseInt(num1)+Number.parseInt(num2)}}
+    <!--{{Number.parseInt(num1)+Number.parseInt(num2)}}-->
+    <span v-text="Number.parseInt(num1)+Number.parseInt(num2)"></span>
     <button>计算</button>
 </div>
 </body>
+<script src="vue.min.js"></script>
 <script>
     var VM = new Vue({
         el:"#app",
