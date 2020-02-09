@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue.js常用指令测试</title>
+
+</head>
+<body>
+<div id="app">
+    <!--{{name}}-->
+    <a >
+        <spa v-text="name"></spa>
+    </a>
+    <input type="text" v-model="num1">+
+    <input type="text" v-model="num2"> =
+    <!--{{Number.parseInt(num1)+Number.parseInt(num2)}}-->
+    <!--<span v-text="Number.parseInt(num1)+Number.parseInt(num2)"></span>-->
+    <span v-text="result"></span>
+    <button v-on:click="change">计算</button>
+</div>
+</body>
+<!--<script src="vue.min.js"></script>-->
+<script src="build.js"></script>
+<script>
+
+</script>
+</html>
